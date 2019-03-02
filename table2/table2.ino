@@ -80,9 +80,9 @@ void callback(char* topic, uint8_t* payload, unsigned int length) {
     ledcWrite(2, g);   
     ledcWrite(3, b);
   } else if(actualzone == "Finish 58350") {
-    ledcWrite(1, 0); // write red component to channel 1, etc.
-    ledcWrite(2, 0);   
-    ledcWrite(3, 0);
+    ledcWrite(1, 255); // write red component to channel 1, etc.
+    ledcWrite(2, 255);   
+    ledcWrite(3, 255);
   }
   Serial.println();
 
